@@ -19,17 +19,22 @@ Plugin 'slim-template/vim-slim.git'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'paranoida/vim-airlineish'
 call vundle#end()
 
 filetype plugin indent on  
 syntax enable
 "For solarized theme
+set t_Co=256 "set terminal to use 256 bit color scheme
+let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 set background=dark
 colorscheme solarized
 
 "For airline
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
+let g:airline_theme = 'airlineish'
 
 "for rainbow parentheses
 au VimEnter * RainbowParenthesesToggle
