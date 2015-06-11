@@ -23,6 +23,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'paranoida/vim-airlineish'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tomtom/tcomment_vim'
+Plugin 'flazz/vim-colorschemes'
 call vundle#end()
 
 filetype plugin indent on  
@@ -31,7 +32,7 @@ syntax enable
 set t_Co=256 "set terminal to use 256 bit color scheme
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 set background=dark
-colorscheme solarized
+colorscheme monokain
 
 "For airline
 let g:airline#extensions#tabline#enabled = 1
