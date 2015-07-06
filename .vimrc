@@ -53,6 +53,8 @@ set shiftwidth=2
 set number
 set hlsearch
 set incsearch
+set ignorecase
+set smartcase
 
 "NredTree
 autocmd StdinReadPre * let s:std_in=1
@@ -60,3 +62,8 @@ autocmd StdinReadPre * let s:std_in=1
 map <C-n> :NERDTreeToggle<CR> 
 "Remove trailing white spaces for ruby files
 autocmd BufWritePre *.rb :%s/\s\+$//e
+"Make the cursor move one row of the screen up or down, rather than per line
+"basis when a single line is
+"wrapped on the multiple rows on the screen.
+nmap j gj
+nmap k gk
