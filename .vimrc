@@ -20,7 +20,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'paranoida/vim-airlineish'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'flazz/vim-colorschemes'
 call vundle#end()
@@ -68,3 +67,4 @@ autocmd BufWritePre *.rb :%s/\s\+$//e
 "wrapped on the multiple rows on the screen.
 nmap j gj
 nmap k gk
+
