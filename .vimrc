@@ -4,30 +4,29 @@ filetype off
 "Include vundle runtime
 set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-rails'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'scrooloose/nerdtree'
-Plugin 'honza/vim-snippets'
-Plugin 'bling/vim-airline'
-Plugin 'slim-template/vim-slim.git'
-Plugin 'scrooloose/syntastic'
-Plugin 'kien/ctrlp.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'paranoida/vim-airlineish'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'flazz/vim-colorschemes'
+Plugin 'gmarik/Vundle.vim' "vundle itself
+Plugin 'tpope/vim-rails' " Rails support
+Plugin 'MarcWeber/vim-addon-mw-utils' " Utility library  
+Plugin 'tomtom/tlib_vim' "utility library
+Plugin 'mattn/emmet-vim' "html tag generator
+Plugin 'slim-template/vim-slim.git' "slim plugin support
+Plugin 'scrooloose/syntastic' "syntax checker
+Plugin 'kchmck/vim-coffee-script' "Coffee script syntax support
+Plugin 'leafgarland/typescript-vim' "type script syntax support
+Plugin 'bling/vim-airline' "Airline bar for vim
+Plugin 'paranoida/vim-airlineish' "Theme for vim airline
+Plugin 'flazz/vim-colorschemes' "Colorschemes
+Plugin 'altercation/vim-colors-solarized' "Colorschemes
 call vundle#end()
 
 filetype plugin indent on  
-syntax enable
 "For solarized theme
+syntax enable
+let g:solarized_termcolors=256
 set t_Co=256 "set terminal to use 256 bit color scheme
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 set background=dark
-colorscheme monokain
+colorscheme solarized
 
 "For airline
 let g:airline#extensions#tabline#enabled = 1
