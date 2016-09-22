@@ -17,6 +17,7 @@ Plugin 'bling/vim-airline' "Airline bar for vim
 Plugin 'paranoida/vim-airlineish' "Theme for vim airline
 Plugin 'flazz/vim-colorschemes' "Colorschemes
 Plugin 'altercation/vim-colors-solarized' "Colorschemes
+Plugin 'scrooloose/nerdcommenter' "Commenting plugin
 call vundle#end()
 
 filetype plugin indent on  
@@ -33,6 +34,8 @@ let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
 let g:airline_theme = 'airlineish'
 
+"For slim template
+autocmd BufNewFile,BufRead *.slim set ft=slim
 
 "Fix indentent and tab to two spaces
 set tabstop=2
