@@ -18,6 +18,7 @@ Plugin 'paranoida/vim-airlineish' "Theme for vim airline
 Plugin 'flazz/vim-colorschemes' "Colorschemes
 Plugin 'altercation/vim-colors-solarized' "Colorschemes
 Plugin 'scrooloose/nerdcommenter' "Commenting plugin
+Plugin 'ctrlpvim/ctrlp.vim' "Fuzzy file finder
 call vundle#end()
 
 filetype plugin indent on  
@@ -28,6 +29,10 @@ set t_Co=256 "set terminal to use 256 bit color scheme
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 set background=dark
 colorscheme solarized
+
+"For Ctrlp Plugin key mapping
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 "For airline
 let g:airline#extensions#tabline#enabled = 1
