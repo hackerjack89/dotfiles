@@ -77,3 +77,8 @@ autocmd BufWritePre *.rb :%s/\s\+$//e
 nmap j gj
 nmap k gk
 
+"to open ctrl-p files in new tab
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
