@@ -6,7 +6,7 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim' "vundle itself
 Plugin 'tpope/vim-rails' " Rails support
-Plugin 'MarcWeber/vim-addon-mw-utils' " Utility library  
+Plugin 'MarcWeber/vim-addon-mw-utils' " Utility library
 Plugin 'tomtom/tlib_vim' "utility library
 Plugin 'mattn/emmet-vim' "html tag generator
 Plugin 'slim-template/vim-slim.git' "slim plugin support
@@ -23,13 +23,15 @@ Plugin 'raimondi/delimitmate' "For adding automatic closing quotes, brackets, et
 Plugin 'nathanaelkane/vim-indent-guides' "For Showing indent guidelines
 Plugin 'elzr/vim-json' "Better json for vim
 Plugin 'jelera/vim-javascript-syntax' "Better javascript syntax highlighting
-Plugin 'vim-scripts/JavaScript-Indent' "Better Indentation for javascript 
+Plugin 'vim-scripts/JavaScript-Indent' "Better Indentation for javascript
 Plugin 'othree/javascript-libraries-syntax.vim' "Syntax support for popular js libraries
 Plugin 'bronson/vim-trailing-whitespace' "Warn about trailing white spaces
 Plugin 'ap/vim-css-color' "Preview color in source code
+Plugin 'Shougo/vimproc.vim' "Plugin to run procs inside vim. Please run 'make' command in plugin root dir.
+Plugin 'Quramy/tsuquyomi' "Typescript autocompletion
 call vundle#end()
 
-filetype plugin indent on  
+filetype plugin indent on
 "For solarized theme
 syntax enable
 let g:solarized_termcolors=256
@@ -61,14 +63,14 @@ set expandtab
 set shiftwidth=2
 
 "Show number and incremental search
-set number
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-
+set number "Show line numbers
+set hlsearch "Highlight search
+set incsearch "Enable incremental search
+set ignorecase "Ignore case while searching
+set smartcase "Ignore case while searching except when first char is capital
+set cursorline "Hightlight the current line the cursor is on
 "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-map <C-n> :NERDTreeToggle<CR> 
+map <C-n> :NERDTreeToggle<CR>
 "Remove trailing white spaces for ruby files
 autocmd BufWritePre *.rb :%s/\s\+$//e
 "Make the cursor move one row of the screen up or down, rather than per line
