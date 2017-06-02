@@ -11,20 +11,13 @@ Plugin 'tomtom/tlib_vim' "utility library
 Plugin 'mattn/emmet-vim' "html tag generator
 Plugin 'slim-template/vim-slim.git' "slim plugin support
 Plugin 'scrooloose/syntastic' "syntax checker
-Plugin 'kchmck/vim-coffee-script' "Coffee script syntax support
 Plugin 'leafgarland/typescript-vim' "type script syntax support
 Plugin 'bling/vim-airline' "Airline bar for vim
 Plugin 'paranoida/vim-airlineish' "Theme for vim airline
-Plugin 'flazz/vim-colorschemes' "Colorschemes
 Plugin 'altercation/vim-colors-solarized' "Colorschemes
-Plugin 'scrooloose/nerdcommenter' "Commenting plugin
-Plugin 'ctrlpvim/ctrlp.vim' "Fuzzy file finder
 Plugin 'raimondi/delimitmate' "For adding automatic closing quotes, brackets, etc.
 Plugin 'nathanaelkane/vim-indent-guides' "For Showing indent guidelines
 Plugin 'elzr/vim-json' "Better json for vim
-Plugin 'jelera/vim-javascript-syntax' "Better javascript syntax highlighting
-Plugin 'vim-scripts/JavaScript-Indent' "Better Indentation for javascript
-Plugin 'othree/javascript-libraries-syntax.vim' "Syntax support for popular js libraries
 Plugin 'bronson/vim-trailing-whitespace' "Warn about trailing white spaces
 Plugin 'ap/vim-css-color' "Preview color in source code
 Plugin 'Shougo/vimproc.vim' "Plugin to run procs inside vim. Please run 'make' command in plugin root dir.
