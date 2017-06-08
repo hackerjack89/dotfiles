@@ -25,10 +25,12 @@ Plugin 'Quramy/tsuquyomi' "Typescript autocompletion
 call vundle#end()
 
 filetype plugin indent on
+
 "For solarized theme
+"select solarized dark theme from terminal preference menu.
 syntax enable
-let g:solarized_termcolors=256
-set t_Co=256 "set terminal to use 256 bit color scheme
+"let g:solarized_termcolors=256 "Degrades colors to 256 bits for solarized
+"set t_Co=256 "set terminal to use 256 bit color scheme
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 set background=dark
 colorscheme solarized
@@ -45,7 +47,20 @@ let g:ctrlp_cmd = 'CtrlP'
 "For airline
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
+let g:airline_powerline_fonts = 1 
 let g:airline_theme = 'airlineish'
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols_branch = ''
+let g:airline_symbols_readonly = ''
+let g:airline_symbols_linenr = ''
+
+
+"Install powerline fonts from here and select 
+"ubuntu mono powerline derivative font from terminal font preference
+"https://github.com/powerline/fonts
 
 "For slim template
 autocmd BufNewFile,BufRead *.slim set ft=slim
