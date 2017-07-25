@@ -22,6 +22,8 @@ Plugin 'bronson/vim-trailing-whitespace' "Warn about trailing white spaces
 Plugin 'ap/vim-css-color' "Preview color in source code
 Plugin 'Shougo/vimproc.vim' "Plugin to run procs inside vim. Please run 'make' command in plugin root dir.
 Plugin 'Quramy/tsuquyomi' "Typescript autocompletion
+Plugin 'mustache/vim-mustache-handlebars' "For handlebar and mustache
+Plugin 'scrooloose/nerdtree' "Nerd tree
 call vundle#end()
 
 filetype plugin indent on
@@ -40,10 +42,6 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=black
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
 
-"For Ctrlp Plugin key mapping
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-
 "For airline
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
@@ -56,7 +54,6 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols_branch = ''
 let g:airline_symbols_readonly = ''
 let g:airline_symbols_linenr = ''
-
 
 "Install powerline fonts from here and select 
 "ubuntu mono powerline derivative font from terminal font preference
@@ -82,13 +79,7 @@ map <C-n> :NERDTreeToggle<CR>
 "Remove trailing white spaces for ruby files
 autocmd BufWritePre *.rb :%s/\s\+$//e
 "Make the cursor move one row of the screen up or down, rather than per line
-"basis when a single line is
+"when a single line is
 "wrapped on the multiple rows on the screen.
 nmap j gj
 nmap k gk
-
-"to open ctrl-p files in new tab
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-    \ }
